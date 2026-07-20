@@ -29,12 +29,12 @@ export default function Home() {
             Clinician Console
           </Link>
           <a
-            href="https://github.com/hallelx2/cervical-lens/releases/latest/download/app-release.apk"
+            href="https://github.com/DATICANcompetitionUI/cervical-lens-submission/releases/download/v0.1.0/cervicallens-v0.1.0.apk"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-full bg-primary text-on-primary text-sm font-semibold hover:bg-opacity-90 transition-all duration-200"
           >
-            Download Mobile Client
+            Download Mobile Client (v0.1.0)
           </a>
         </nav>
       </header>
@@ -62,12 +62,12 @@ export default function Home() {
               Enter Clinician Console
             </Link>
             <a
-              href="https://github.com/hallelx2/cervical-lens/releases/latest/download/app-release.apk"
+              href="https://github.com/DATICANcompetitionUI/cervical-lens-submission/releases/download/v0.1.0/cervicallens-v0.1.0.apk"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full border border-sand bg-parchment text-center text-midnight font-semibold hover:bg-sand transition-all duration-200 flex items-center justify-center gap-2"
             >
-              <span>📥</span> Download Android Mobile App (APK)
+              <span>📥</span> Download Android App (v0.1.0 APK)
             </a>
           </div>
         </div>
@@ -222,10 +222,10 @@ export default function Home() {
               <div>
                 <div className="w-2.5 h-2.5 rounded-full bg-[#2e7d32] mb-4" />
                 <h4 className="font-display text-lg font-bold text-midnight">Field Worker App</h4>
-                <p className="text-xs text-steel mt-2">Expo React Native client with local file system caching, camera- specimen uploads, and offline support.</p>
+                <p className="text-xs text-steel mt-2">Expo React Native client (v0.1.0) with local file system caching, camera specimen uploads, and offline support.</p>
               </div>
-              <a href="https://github.com/hallelx2/cervical-lens/releases/latest/download/app-release.apk" target="_blank" rel="noopener noreferrer" className="mt-6 text-xs text-primary font-bold hover:underline">
-                Download APK Archive →
+              <a href="https://github.com/DATICANcompetitionUI/cervical-lens-submission/releases/download/v0.1.0/cervicallens-v0.1.0.apk" target="_blank" rel="noopener noreferrer" className="mt-6 text-xs text-primary font-bold hover:underline">
+                Download v0.1.0 APK Archive →
               </a>
             </div>
           </div>
