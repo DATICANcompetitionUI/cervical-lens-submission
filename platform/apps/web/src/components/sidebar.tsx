@@ -71,15 +71,13 @@ export default function Sidebar() {
           <div className="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center">
             <svg
               className="w-6 h-6 text-on-primary-container"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+              viewBox="0 0 100 100"
+              fill="currentColor"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M50 5C50 5 85 15.5 85 47.5C85 71.5 50 95 50 95C50 95 15 71.5 15 47.5C15 15.5 50 5 50 5ZM50 25C32.5 25 22.5 45 22.5 45C22.5 45 32.5 65 50 65C67.5 65 77.5 45 77.5 45C77.5 45 67.5 25 50 25ZM50 32.5C59.7 32.5 67.5 45 67.5 45C67.5 45 59.7 57.5 50 57.5C40.3 57.5 32.5 45 32.5 45C32.5 45 40.3 32.5 50 32.5ZM50 35C44.5 35 40 39.5 40 45C40 50.5 44.5 55 50 55C55.5 55 60 50.5 60 45C60 39.5 55.5 35 50 35ZM50 41C52.2 41 54 42.8 54 45C54 47.2 52.2 49 50 49C47.8 49 46 47.2 46 45C46 42.8 47.8 41 50 41Z"
               />
             </svg>
           </div>
