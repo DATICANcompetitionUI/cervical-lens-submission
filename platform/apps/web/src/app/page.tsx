@@ -29,7 +29,7 @@ export default function Home() {
             Clinician Console
           </Link>
           <a
-            href="https://expo.dev/accounts/halleluyaholudele/projects/cervicallens/builds/e0095f33-9d11-4383-8211-12020fe6c5be"
+            href="https://github.com/hallelx2/cervical-lens/releases/latest/download/app-release.apk"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-full bg-primary text-on-primary text-sm font-semibold hover:bg-opacity-90 transition-all duration-200"
@@ -62,7 +62,7 @@ export default function Home() {
               Enter Clinician Console
             </Link>
             <a
-              href="https://expo.dev/accounts/halleluyaholudele/projects/cervicallens/builds/e0095f33-9d11-4383-8211-12020fe6c5be"
+              href="https://github.com/hallelx2/cervical-lens/releases/latest/download/app-release.apk"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full border border-sand bg-parchment text-center text-midnight font-semibold hover:bg-sand transition-all duration-200 flex items-center justify-center gap-2"
@@ -130,7 +130,8 @@ export default function Home() {
             {/* Visual Risk Matrix Grid */}
             <div className="mt-8">
               <h4 className="font-mono text-xs font-semibold text-midnight uppercase tracking-wider mb-4">2D Risk Classification Matrix</h4>
-              <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono">
+              <div className="overflow-x-auto pb-2">
+                <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono min-w-[340px]">
                 <div className="p-2"></div>
                 <div className="p-2 border-b border-sand text-ash uppercase tracking-wider text-[10px]">Metastasis Low</div>
                 <div className="p-2 border-b border-sand text-ash uppercase tracking-wider text-[10px]">Metastasis High</div>
@@ -156,6 +157,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </section>
 
@@ -222,7 +224,7 @@ export default function Home() {
                 <h4 className="font-display text-lg font-bold text-midnight">Field Worker App</h4>
                 <p className="text-xs text-steel mt-2">Expo React Native client with local file system caching, camera- specimen uploads, and offline support.</p>
               </div>
-              <a href="https://expo.dev/accounts/halleluyaholudele/projects/cervicallens/builds/e0095f33-9d11-4383-8211-12020fe6c5be" target="_blank" rel="noopener noreferrer" className="mt-6 text-xs text-primary font-bold hover:underline">
+              <a href="https://github.com/hallelx2/cervical-lens/releases/latest/download/app-release.apk" target="_blank" rel="noopener noreferrer" className="mt-6 text-xs text-primary font-bold hover:underline">
                 Download APK Archive →
               </a>
             </div>
