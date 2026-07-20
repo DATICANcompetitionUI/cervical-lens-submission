@@ -8,7 +8,10 @@ Cytology screening at the edge · genomic risk stratification · a real web/mobi
 
 `TypeScript` · `Bun` · `Turborepo` · `Next.js` · `Python` · `ONNX` · `PyTorch` · `lifelines`
 
-> 🔗 **Live API:** [api-cervicallens.hallelx2.com/health](https://api-cervicallens.hallelx2.com/health) &nbsp;·&nbsp; ⚠️ Research use only — not a clinical device.
+> 🔗 **Clinician Web Portal:** [cervicallens.hallelx2.com](https://cervicallens.hallelx2.com)  
+> 🔗 **Mobile App (EAS Preview):** [Download Android APK](https://expo.dev/accounts/halleluyaholudele/projects/cervicallens/builds/e0095f33-9d11-4383-8211-12020fe6c5be)  
+> 🔗 **Live API:** [api-cervicallens.hallelx2.com/health](https://api-cervicallens.hallelx2.com/health)  
+> ⚠️ Research use only — not a clinical device.
 
 </div>
 
@@ -154,7 +157,7 @@ uv run python notebooks/10_combined_risk_real.py      # Run 2-axis risk modeling
 
 * **API Backend**: Vercel — [api-cervicallens.hallelx2.com/health](https://api-cervicallens.hallelx2.com/health) (CORS preflight & `/health` resolved).
 * **Clinician Web Console**: Vercel — [cervicallens.hallelx2.com](https://cervicallens.hallelx2.com).
-* **Mobile Client**: Expo EAS — [Build #5a988e9e-f906-4e95-895d-b786e77f7c83](https://expo.dev/accounts/halleluyaholudele/projects/cervicallens/builds/5a988e9e-f906-4e95-895d-b786e77f7c83).
+* **Mobile Client**: Expo EAS — [Build #e0095f33-9d11-4383-8211-12020fe6c5be](https://expo.dev/accounts/halleluyaholudele/projects/cervicallens/builds/e0095f33-9d11-4383-8211-12020fe6c5be).
 * **Database**: Neon Serverless Postgres.
 
 ---
