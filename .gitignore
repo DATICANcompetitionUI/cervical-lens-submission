@@ -1,0 +1,62 @@
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ── Secrets / env ────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Node / platform ──────────────────────────────────────
+node_modules/
+.next/
+.turbo/
+*.tsbuildinfo
+platform/**/build/
+platform/**/dist/
+platform/apps/mobile/.expo/
+platform/apps/mobile/android/
+platform/apps/mobile/ios/
+*.db
+
+# ── Research: large raw data & training intermediates (reproducible) ──
+research/**/data/raw/
+research/**/data/processed/
+research/**/data/embeddings/
+research/**/data/features/
+research/**/data/eda/
+research/**/data/sigprofiler/
+research/**/logs/
+# large training checkpoints (the *deployment* copies live in /models and ARE tracked)
+research/ml/models/exported/
+research/genomics/models/*.pkl
+
+# ── Keep the deployment bundle tracked (it's the science→product bridge) ──
+!models/
+!models/imaging/*.onnx
+!models/imaging/*.onnx.data
+!models/genomics/*.pkl
+
+# ── IDE / OS / misc ──────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.coverage
+htmlcov/
+.pytest_cache/
+docker-compose.override.yml
+
+.vercel
+.env*

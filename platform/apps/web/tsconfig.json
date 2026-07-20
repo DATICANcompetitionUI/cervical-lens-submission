@@ -1,0 +1,47 @@
+{
+  "extends": "@cervical-lens/config/tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "module": "ESNext",
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@cervical-lens/shared": [
+        "../../packages/shared/src"
+      ],
+      "@cervical-lens/shared/*": [
+        "../../packages/shared/src/*"
+      ],
+      "@cervical-lens/ui": [
+        "../../packages/ui/src"
+      ],
+      "@cervical-lens/ui/*": [
+        "../../packages/ui/src/*"
+      ],
+      "@cervical-lens/hooks": [
+        "../../packages/hooks/src"
+      ],
+      "@cervical-lens/hooks/*": [
+        "../../packages/hooks/src/*"
+      ]
+    },
+    "allowJs": true,
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

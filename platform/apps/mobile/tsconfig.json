@@ -1,0 +1,16 @@
+{
+  "extends": "@cervical-lens/config/tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@cervical-lens/shared": ["../../packages/shared/src"],
+      "@cervical-lens/shared/*": ["../../packages/shared/src/*"],
+      "@cervical-lens/hooks": ["../../packages/hooks/src"],
+      "@cervical-lens/hooks/*": ["../../packages/hooks/src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "App.tsx"]
+}

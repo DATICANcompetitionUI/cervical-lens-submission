@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "CervicalLens",
+    "slug": "cervicallens",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f9f9ff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cervicallens.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f9f9ff"
+      },
+      "package": "com.cervicallens.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-camera",
+      "expo-image-picker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "55d3df5e-5929-4955-bcc8-2635ce716e3e"
+      }
+    },
+    "owner": "halleluyaholudele"
+  }
+}

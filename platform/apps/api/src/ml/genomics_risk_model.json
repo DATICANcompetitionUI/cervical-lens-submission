@@ -1,0 +1,101 @@
+{
+  "model": "cervicallens_genomics_risk_v1",
+  "endpoint": "PFI",
+  "cv_cindex": 0.655,
+  "n_train": 294,
+  "axes": {
+    "virulence": {
+      "features": [
+        "integration_any",
+        "integration_hiconf",
+        "e6_ratio",
+        "is_hpv16",
+        "is_hpv18",
+        "is_hr_hpv"
+      ],
+      "median": {
+        "integration_any": 0.0,
+        "integration_hiconf": 0.0,
+        "e6_ratio": 0.509126,
+        "is_hpv16": 0.0,
+        "is_hpv18": 0.0,
+        "is_hr_hpv": 1.0
+      },
+      "mean": {
+        "integration_any": 0.47619047619047616,
+        "integration_hiconf": 0.40816326530612246,
+        "e6_ratio": 0.5601585986394559,
+        "is_hpv16": 0.35034013605442177,
+        "is_hpv18": 0.09183673469387756,
+        "is_hr_hpv": 0.5306122448979592
+      },
+      "scale": {
+        "integration_any": 0.49943278484292936,
+        "integration_hiconf": 0.49149365627723657,
+        "e6_ratio": 0.29146683395052864,
+        "is_hpv16": 0.4770764353054875,
+        "is_hpv18": 0.28879534077724295,
+        "is_hr_hpv": 0.49906201063826455
+      },
+      "coef": {
+        "integration_any": -0.011880565089876938,
+        "integration_hiconf": 0.09197592971871793,
+        "e6_ratio": 0.15607657307386216,
+        "is_hpv16": -0.21591438494579074,
+        "is_hpv18": 0.040153348371830426,
+        "is_hr_hpv": -0.09752992587275765
+      },
+      "threshold": 0.1571017900504415
+    },
+    "metastasis": {
+      "features": [
+        "apobec_tcw_fraction",
+        "a3g_ct_fraction",
+        "APOBEC3G_expr",
+        "APOBEC3B_expr",
+        "SBS2",
+        "SBS13"
+      ],
+      "median": {
+        "apobec_tcw_fraction": 0.3535353535353535,
+        "a3g_ct_fraction": 0.0694444444444444,
+        "APOBEC3G_expr": 8.566600000000001,
+        "APOBEC3B_expr": 9.53515,
+        "SBS2": 24.0,
+        "SBS13": 19.0
+      },
+      "mean": {
+        "apobec_tcw_fraction": 0.3427397241860173,
+        "a3g_ct_fraction": 0.0688910824213059,
+        "APOBEC3G_expr": 8.468479081632653,
+        "APOBEC3B_expr": 9.101672448979592,
+        "SBS2": 54.9421768707483,
+        "SBS13": 52.554421768707485
+      },
+      "scale": {
+        "apobec_tcw_fraction": 0.1709849498923355,
+        "a3g_ct_fraction": 0.028316016459501252,
+        "APOBEC3G_expr": 1.2787291346724063,
+        "APOBEC3B_expr": 1.86898608104199,
+        "SBS2": 104.76212148798149,
+        "SBS13": 124.93501207568967
+      },
+      "coef": {
+        "apobec_tcw_fraction": -0.006976146436281354,
+        "a3g_ct_fraction": 0.0453149374153481,
+        "APOBEC3G_expr": -0.17165714352893924,
+        "APOBEC3B_expr": -0.25183512325799673,
+        "SBS2": -0.02651271087049211,
+        "SBS13": -0.008334952108577553
+      },
+      "threshold": -0.043758618916822506
+    }
+  },
+  "categories": {
+    "CRITICAL": "high virulence AND high metastasis",
+    "HIGH": "high virulence only",
+    "MODERATE": "high metastasis only",
+    "LOW": "low on both"
+  },
+  "disclaimer": "Prognostic research model on TCGA-CESC. Not a clinical device."
+}

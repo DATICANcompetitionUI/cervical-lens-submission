@@ -1,0 +1,67 @@
+{
+  "model": "CervicalLens Edge v1",
+  "architecture": "MobileNetV3-Small (distilled)",
+  "teacher": "path_foundation",
+  "distillation": {
+    "temperature": 4.0,
+    "alpha": 0.7,
+    "epochs": 24
+  },
+  "onnx_metrics": {
+    "accuracy": 0.849802371541502,
+    "sensitivity": 0.9605911330049262,
+    "specificity": 0.4,
+    "precision": 0.8666666666666667,
+    "f1": 0.9112149532710281,
+    "auc_roc": 0.8439408866995074
+  },
+  "student_pytorch_metrics": {
+    "accuracy": 0.849802371541502,
+    "sensitivity": 0.9605911330049262,
+    "specificity": 0.4,
+    "precision": 0.8666666666666667,
+    "f1": 0.9112149532710281,
+    "auc_roc": 0.8439408866995074,
+    "confusion_matrix": [
+      [
+        20,
+        30
+      ],
+      [
+        8,
+        195
+      ]
+    ]
+  },
+  "model_size_mb": {
+    "onnx_float32": 0.28,
+    "onnx_quantized": 0.28
+  },
+  "inference_speed_ms": {
+    "onnx_quantized_mean": 3.6,
+    "pytorch_cpu_mean": 14.4
+  },
+  "deployment_ready": true,
+  "class_names": [
+    "NILM",
+    "Abnormal"
+  ],
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "input_normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  }
+}

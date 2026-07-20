@@ -1,0 +1,31 @@
+{
+  "name": "@cervical-lens/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target=node",
+    "vercel-build": "bun build src/vercel-entry.ts --outdir ../../api --target=node --format=esm --external onnxruntime-node --entry-naming index.mjs && cp src/ml/*.onnx* src/ml/*.json ../../api/",
+    "start": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "better-auth": "^1.6.23",
+    "drizzle-orm": "^0.38.0",
+    "hono": "^4.7.0",
+    "jimp": "^1.6.1",
+    "onnxruntime-node": "^1.27.0"
+  },
+  "devDependencies": {
+    "@cervical-lens/db": "workspace:*",
+    "@cervical-lens/shared": "workspace:*",
+    "@cervical-lens/config": "workspace:*",
+    "typescript": "^5.7.0",
+    "@types/bun": "^1.2.0"
+  }
+}

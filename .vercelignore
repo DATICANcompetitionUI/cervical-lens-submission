@@ -1,0 +1,17 @@
+# Vercel ignore file
+# Ignore non-web platform folders
+platform/apps/mobile/
+
+
+# Ignore large training models, research data, databases, virtualenvs, etc.
+models/
+research/
+supabase/
+.venv/
+.python-version
+pyproject.toml
+uv.lock
+docs/
+*.db
+*.db-journal
+*.sqlite

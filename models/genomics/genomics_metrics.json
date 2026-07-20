@@ -1,0 +1,41 @@
+{
+  "n_patients": 294,
+  "n_progression_events": 71,
+  "endpoint": "PFI",
+  "validation": "5-fold out-of-fold cross-validation",
+  "cv_cindex_virulence": 0.5910175177040626,
+  "cv_cindex_metastasis": 0.6453224002981737,
+  "cv_cindex_combined": 0.65501304509877,
+  "cv_cindex_combined_ci95": [
+    0.5884915267908729,
+    0.713095213702008
+  ],
+  "apparent_cindex_combined": 0.6957137532612747,
+  "cv_auc_progression_mean": 0.5892640692640694,
+  "cv_auc_progression_std": 0.07025971506870628,
+  "logrank_p_4group_oof": 0.05341127809244522,
+  "critical_vs_low_HR_oof": 2.2280624699088323,
+  "critical_vs_low_p_oof": 0.009705821673610194,
+  "risk_distribution": {
+    "LOW": 91,
+    "MODERATE": 54,
+    "HIGH": 56,
+    "CRITICAL": 93
+  },
+  "virulence_features": [
+    "integration_any",
+    "integration_hiconf",
+    "e6_ratio",
+    "is_hpv16",
+    "is_hpv18",
+    "is_hr_hpv"
+  ],
+  "metastasis_features": [
+    "apobec_tcw_fraction",
+    "a3g_ct_fraction",
+    "APOBEC3G_expr",
+    "APOBEC3B_expr",
+    "SBS2",
+    "SBS13"
+  ]
+}

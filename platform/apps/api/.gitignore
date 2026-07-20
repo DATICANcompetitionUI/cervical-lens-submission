@@ -1,0 +1,7 @@
+.vercel
+.env*
+
+# api/index.js (+ copied ml assets) IS committed intentionally — see
+# apps/api/api/README.md. Regenerate with `bun run vercel-build` before
+# deploying; don't hand-edit.
+dist/

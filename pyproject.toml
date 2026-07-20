@@ -1,0 +1,28 @@
+[project]
+name = "cervical-scancer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel",
+    "joblib",
+    "jupyter",
+    "lifelines",
+    "llvmlite>=0.46.0",
+    "loguru",
+    "matplotlib",
+    "numpy",
+    "onnxruntime",
+    "pandas",
+    "plotly",
+    "pyyaml",
+    "requests",
+    "scikit-learn",
+    "scikit-survival",
+    "scipy",
+    "seaborn",
+    "shap",
+    "tqdm",
+    "xgboost",
+]
