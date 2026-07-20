@@ -1,0 +1,61 @@
+name: Build Android APK
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'platform/apps/mobile/**'
+      - 'platform/packages/**'
+      - 'platform/package.json'
+      - 'platform/bun.lock'
+      - '.github/workflows/build-apk.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build APK (Local runner)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.2.0
+
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Install dependencies
+        working-directory: platform
+        run: bun install --frozen-lockfile
+
+      - name: Run gradle patching
+        working-directory: platform
+        run: node patch-gradle-files.js
+
+      - name: Set environment variables
+        run: |
+          echo "EXPO_PUBLIC_API_URL=https://api-cervicallens.hallelx2.com/api/v1" >> $GITHUB_ENV
+
+      - name: Generate Android project (Prebuild)
+        working-directory: platform/apps/mobile
+        run: bunx expo prebuild --platform android --no-install
+
+      - name: Build Android Release APK
+        working-directory: platform/apps/mobile/android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cervical-lens-android-apk
+          path: platform/apps/mobile/android/app/build/outputs/apk/release/app-release.apk
+          if-no-files-found: error
